@@ -10,6 +10,7 @@ const LoginPage = () => {
   const [password, setPassword] = useState('');
   const [loading, setLoading] = useState(false);
   const history = useHistory();
+  
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (!username || !password) return;

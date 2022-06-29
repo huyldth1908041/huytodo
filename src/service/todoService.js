@@ -10,6 +10,10 @@ const todoService = {
     const url = '/register';
     return await axiosClient.post(url, body);
   },
+  fetchTodo: async () => {
+    const url = '/todos';
+    return await axiosClient.get(url);
+  }
 
 }
 
