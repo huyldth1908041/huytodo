@@ -2,7 +2,7 @@ import {QueryClient, QueryClientProvider} from "react-query";
 import {Route, BrowserRouter as Router, Switch} from "react-router-dom";
 import PrivateLayout from "./layouts/PrivateLayout";
 import {LoginPage, RegisterPage} from "./pages";
-// import { Link } from "react-router-dom";
+import './index.css'
 
 function App() {
   const queryClient = new QueryClient();

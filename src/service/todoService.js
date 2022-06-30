@@ -13,8 +13,15 @@ const todoService = {
   fetchTodo: async () => {
     const url = '/todos';
     return await axiosClient.get(url);
+  },
+  createTodo: async (body) => {
+    const url = '/todos';
+    return await axiosClient.post(url, body)
+  },
+  changeStatus: async (id, body) => {
+    const url = '/todos/changestatus/'+id;
+    return await axiosClient.put(url, body)
   }
-
 }
 
 export default todoService
